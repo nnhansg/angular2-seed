@@ -16,6 +16,7 @@ import {provideFakeRouter} from '../testing/router/router-testing-providers';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './+home/home.component';
 import { AboutComponent } from './+about/about.component';
+import { About2Component } from './+about-2/about-2.component';
 
 export function main() {
 
@@ -29,7 +30,8 @@ export function main() {
       // Support for testing component that uses Router
       let config: RouterConfig = [
         { path: '', component: HomeComponent },
-        { path: 'about', component: AboutComponent }
+        { path: 'about', component: AboutComponent },
+        { path: 'about-2', component: About2Component }
       ];
 
       addProviders([
