@@ -1,7 +1,7 @@
 import { join } from 'path';
 import { argv } from 'yargs';
 
-import { Environments, InjectableDependency } from './seed.config.interfaces';
+import { SassOptions, Environments, InjectableDependency } from './seed.config.interfaces';
 
 /**
  * The enumeration of available environments.
@@ -263,6 +263,9 @@ export class SeedConfig {
    * @type {boolean}
    */
   ENABLE_SCSS = argv['scss'] || false;
+
+  SASS_OPTIONS: SassOptions = {
+  };
 
   /**
    * The list of NPM dependcies to be injected in the `index.html`.
