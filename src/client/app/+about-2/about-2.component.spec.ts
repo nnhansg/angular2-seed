@@ -7,10 +7,10 @@ import {
 } from '@angular/core/testing';
 import { getDOM } from '@angular/platform-browser/src/dom/dom_adapter';
 
-import { AboutComponent } from './about-2.component';
+import { About2Component } from './about-2.component';
 
 export function main() {
-  describe('About component', () => {
+  describe('About 2 component', () => {
     // Disable old forms
     let providerArr: any[];
 
@@ -31,7 +31,7 @@ export function main() {
 
 @Component({
   selector: 'test-cmp',
-  directives: [AboutComponent],
+  directives: [About2Component],
   template: '<sd-about-2></sd-about-2>'
 })
 class TestComponent {}
